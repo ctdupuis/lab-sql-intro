@@ -11,7 +11,12 @@ CREATE TABLE person (
 
 -- Add 5 different person into the person database. Remember to not include the person_id because it should auto-increment.
 INSERT INTO person (name, age, height_cm, city favorite_color)
-VALUES ('Cody', 25, 172.72, 'Lafayette', 'red'),
+VALUES 
+('Cody', 25, 172.72, 'Lafayette', 'red'),
+('Clayton', 24. 175, 'Lafayette', 'blue'),
+('Daravy', 30, 180, 'Lafayette', 'yellow'),
+('Tim', 38, 171.35, 'Lafayette', 'red'),
+('Emily', 21, 169.40, 'Baton Rouge', 'purple');
 
 
 -- Select all the person in the person table by height from tallest to shortest.
