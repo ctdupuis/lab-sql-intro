@@ -15,5 +15,6 @@ UPDATE customer SET last_name = 'Thompson' WHERE first_name = 'Julia' AND last_n
 UPDATE customer SET support_rep_id = 4 WHERE email = 'luisrojas@yahoo.cl';
 
 -- Find all tracks that are the genre Metal and have no composer. Set the composer to “The darkness around us”.
+SELECT * FROM genre WHERE genre_id = 3; -- To find the genre_id
 UPDATE track SET composer = 'The darkness around us' WHERE genre_id = 3 AND composer IS NULL;
 -- SELECT * FROM track LEFT JOIN genre ON track.genre_id = genre.genre_id WHERE genre.name = 'Metal' AND composer IS NULL;
