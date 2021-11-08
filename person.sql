@@ -14,40 +14,49 @@ INSERT INTO people (name, age, height_cm, city favorite_color)
 VALUES ('Cody', 25, 172.72, 'Lafayette', 'red'),
 
 
-
 -- Select all the people in the person table by height from tallest to shortest.
+SELECT * FROM people ORDER BY height DESC;
 
 
 -- Select all the people in the person table by height from shortest to tallest.
-
+SELECT * FROM people ORDER BY height ASC;
 
 
 -- Select all the people in the person table by age from oldest to youngest.
-
+SELECT * FROM people ORDER BY age ASC;
 
 
 -- Select all the people in the person table older than age 20.
+SELECT * FROM people WHERE age > 20;
 
 
 -- Select all the people in the person table that are exactly 18.
+SELECT * FROM people WHERE age = 18;
 
 
 -- Select all the people in the person table that are less than 20 and older than 30.
+SELECT * FROM people WHERE age < 20 AND age > 30;
 
 
 -- Select all the people in the person table that are not 27 (use not equals).
+SELECT * FROM people WHERE age != 27;
 
 
 -- Select all the people in the person table where their favorite color is not red.
+SELECT * FROM people WHERE favorite_color != "red";
 
 
 -- Select all the people in the person table where their favorite color is not red and is not blue.
+SELECT * FROM people WHERE favorite_color != "red" AND favorite_color != "blue";
 
 
 -- Select all the people in the person table where their favorite color is orange or green.
+SELECT * FROM people WHERE favorite_color = "orange" or favorite_color = "green";
 
 
 -- Select all the people in the person table where their favorite color is orange, green or blue (use IN).
+SELECT * FROM people WHERE favorite_color IN ('orange', 'green', 'blue');
 
 
 -- Select all the people in the person table where their favorite color is yellow or purple (use IN).
+SELECT * FROM people WHERE favorite_color IN ('yellow', 'purple');
