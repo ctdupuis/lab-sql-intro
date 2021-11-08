@@ -20,11 +20,11 @@ VALUES
 
 
 -- Select all the person in the person table by height from tallest to shortest.
-SELECT * FROM person ORDER BY height DESC;
+SELECT * FROM person ORDER BY height_cm DESC;
 
 
 -- Select all the person in the person table by height from shortest to tallest.
-SELECT * FROM person ORDER BY height ASC;
+SELECT * FROM person ORDER BY height_cm ASC;
 
 
 -- Select all the person in the person table by age from oldest to youngest.
